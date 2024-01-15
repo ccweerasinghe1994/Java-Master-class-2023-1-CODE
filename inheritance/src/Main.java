@@ -11,7 +11,7 @@ public class Main {
         System.out.println(programmer.getAge());
         System.out.println(Arrays.toString(programmer.getProgrammingLanguages()));
         programmer.writingCode();
-        System.out.println(  programmer.toString());
+        System.out.println(programmer);
         System.out.println(programmer.hashCode());
     }
 }

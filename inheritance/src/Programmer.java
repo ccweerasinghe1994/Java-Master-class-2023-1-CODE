@@ -18,6 +18,8 @@ public class Programmer extends Employee{
     }
 
     public void writingCode() {
-        System.out.println("Writing code...");
+        super.hi();
+
+        System.out.println(this.name + "Writing code...");
     }
 }

@@ -1,12 +1,12 @@
 import java.util.Objects;
 
 public class Employee {
-    private String name;
-    private String address;
+    protected String name;
+    protected String address;
 
-    private String experience;
+    protected String experience;
 
-    private int age;
+    protected int age;
 
     public Employee(String name, String address, String experience, int age) {
         this.name = name;
@@ -68,5 +68,9 @@ public class Employee {
                 ", experience='" + experience + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public void hi(){
+        System.out.println("Hi"+ this.name);
     }
 }
