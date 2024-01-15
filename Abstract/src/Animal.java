@@ -7,9 +7,7 @@ abstract public class Animal {
         this.name = name;
     }
 
-    public void makeSound() {
-        System.out.println("Unknown animal sound!");
-    }
+    abstract public void makeSound();
 
     public String getName() {
         return name;
