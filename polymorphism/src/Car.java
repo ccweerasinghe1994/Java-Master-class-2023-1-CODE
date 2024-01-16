@@ -11,6 +11,7 @@ public class Car implements Vehicle {
     @Override
     public void move(int speed) {
         System.out.println("Car is moving");
+        System.out.println(Vehicle.PURCHASE_RATE);
         this.currentSpeed = speed;
     }
 
