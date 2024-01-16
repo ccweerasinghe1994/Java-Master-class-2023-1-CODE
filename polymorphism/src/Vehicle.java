@@ -9,4 +9,8 @@ public interface Vehicle {
     void applyBrake(int speed);
 
     int getCurrentSpeed();
+
+    default double milesToKm() {
+        return getCurrentSpeed() * 1.60934;
+    }
 }
