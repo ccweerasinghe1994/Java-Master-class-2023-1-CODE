@@ -1,9 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        Animal cat = new Cat("Misty");
-        Animal dog = new Dog("Rex");
-        cat.makeSound();
-        dog.makeSound();
+        NumberExtractor numberExtractor = new NumberExtractor();
+        EmailExtractorReport emailExtractorReport = new EmailExtractorReport();
+        try {
+            emailExtractorReport.prepareAndSendReport("src/data.txt");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

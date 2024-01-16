@@ -1,0 +1,12 @@
+# this file contains all kind of data
+
+chamara
+gagani
+sachin
+joshua
+Kevin
+abc@gmail.com
+EgS123@gmail.com
+940767199431
+940767199432
+940767199433
