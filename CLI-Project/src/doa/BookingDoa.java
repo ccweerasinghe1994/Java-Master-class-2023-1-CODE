@@ -15,10 +15,18 @@ public class BookingDoa {
         bookings[bookings.length - 1] = booking;
         printBooking(booking);
     }
-    private void printBooking(Booking booking){
+
+    private void printBooking(Booking booking) {
         System.out.println("Booking Details");
-        System.out.println("User Id: "+ booking.getUserId());
-        System.out.println("Car Model: "+booking.getCarModel());
+        System.out.println("User Id: " + booking.getUserId());
+        System.out.println("Car Model: " + booking.getCarModel());
     }
 
+    public void printBookingsByUser() {
+        for (Booking booking : bookings) {
+            if (booking != null) {
+                System.out.println(booking);
+            }
+        }
+    }
 }

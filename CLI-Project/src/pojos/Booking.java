@@ -1,7 +1,5 @@
 package pojos;
 
-import java.util.UUID;
-
 public class Booking {
     private String userId;
 
@@ -29,5 +27,13 @@ public class Booking {
 
     public void setCarModel(String carModel) {
         this.carModel = carModel;
+    }
+
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "userId='" + userId + '\'' +
+                ", carModel='" + carModel + '\'' +
+                '}';
     }
 }

@@ -37,4 +37,36 @@ public class CarDoa {
         Car car = getCarByModel(model);
         return car != null && !car.isBooked();
     }
+
+    public void getElectricCars() {
+        for (Car car : cars) {
+            if (car.isElectric() && !car.isBooked()) {
+                System.out.println(car);
+            }
+        }
+    }
+
+    public void printAllAvailableCars() {
+        for (Car car : cars) {
+            if (!car.isBooked()) {
+                System.out.println(car);
+            }
+        }
+    }
+
+    public void printBookedCars() {
+
+        for (Car car : cars) {
+            if (car.isBooked()) {
+                System.out.println(car);
+            }
+        }
+    }
+
+    public void setCarBooked(String model) {
+        Car car = getCarByModel(model);
+        if (car != null) {
+            car.setBooked(true);
+        }
+    }
 }

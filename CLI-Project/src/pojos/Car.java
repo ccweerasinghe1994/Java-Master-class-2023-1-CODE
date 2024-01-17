@@ -50,4 +50,14 @@ public class Car {
     public void setBooked(boolean booked) {
         isBooked = booked;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", isElectric=" + isElectric +
+                ", isBooked=" + isBooked +
+                '}';
+    }
 }
