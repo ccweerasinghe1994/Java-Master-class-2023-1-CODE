@@ -1,4 +1,4 @@
-public class Cube implements Shape {
+public class Cube implements Shape, ThreeDimensionalShape {
     private final int length;
 
     public Cube(int length) {
@@ -14,7 +14,8 @@ public class Cube implements Shape {
         return  (getLength() * getLength() * Math.PI);
     }
 
-    public int getVolume() {
+    @Override
+    public double volume() {
         return getLength() * getLength() * getLength();
     }
 }
