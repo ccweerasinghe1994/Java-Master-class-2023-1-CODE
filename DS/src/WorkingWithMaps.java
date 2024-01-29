@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class WorkingWithMaps {
     public static void main(String[] args) {
-        Map<Person, Diamond> map = new HashMap<>();
-        map.put(new Person("John", 20), new Diamond("blue"));
-        System.out.println(new Person("John", 20).hashCode());
-        System.out.println(new Person("John", 20).hashCode());
+Map<Person, Diamond> map = new HashMap<>();
+map.put(new Person("John", 20), new Diamond("blue"));
+System.out.println(new Person("John", 20).hashCode());
+System.out.println(new Person("John", 20).hashCode());
 //        System.out.println(map.get(new Person("John", 20)).hashCode());
     }
 
